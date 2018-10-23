@@ -1,0 +1,335 @@
+/* General */
+html {
+    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-size: 2rem;
+    color: #383838;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.5rem;
+    color: #383838;
+    font-weight: 500;
+}
+h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #383838;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1.5rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+.logo img {
+    height: 2.5rem;
+}
+.colmar {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.academy {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: gray;
+}
+nav a {
+    padding-left: 1rem;
+    color: #383838;
+}
+nav.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+  nav.desktop {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+  }
+  .mobile-icon {
+      height: 2.5rem;
+  }
+}
+/* content */
+@media only screen and (min-width: 650px) {
+    .section .left {
+        width: 60%;
+        padding: 2rem 1.5rem;
+    }
+    .section .right {
+        width: 40%;
+    }
+}
+.left img, video {
+    width: 100%;
+}
+.headline {
+    padding-top: 2rem;
+    margin: 0 auto;
+}
+/* Banner Section */
+.banner {
+    display: flex;
+    background-color: #DCDCDC;
+}
+@media only screen and (min-width: 650px) {
+    .banner .left {
+        padding: 2rem 1.5rem;
+    }
+}
+.banner .right {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5rem;
+}
+@media only screen and (min-width: 650px) {
+    .banner .right {
+        padding-right: 4.5rem;
+    }
+
+    .banner .right h3 {
+        padding: 1.5rem 0;
+    }
+}
+.banner .right a {
+    color: white;
+    background-color: #383838;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .banner {
+      flex-direction: column;
+  }
+  .banner .left {
+      width: 100%;
+      padding: 0 0;
+  }
+  .banner .right {
+      width: 100%;
+      padding: 2rem 1rem 2rem 1rem;
+  }
+  .banner .right h3 {
+      padding-top: 2rem;
+  }
+  .banner .right a {
+      margin-top: 1.5rem;
+  }
+
+}
+/* Information Section */
+.information {
+    display: flex;
+}
+.information .left h2 {
+    padding-top: 2rem;
+}
+.information .left p {
+    padding-top: 1.5rem;
+}
+.subtext {
+    font-size: 0.75rem;
+}
+.information .right {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-left: 1px solid #E5E5E5;
+}
+.subsection {
+    display: flex;
+    width: 100%;
+}
+.subsection img {
+    width: 35%;
+    height: 100%;
+    padding: 16px;
+}
+.subsection .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 0.5rem;
+}
+.information .first {
+    border-bottom: 1px solid #E5E5E5;
+}
+.information .second {
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+.information .third {
+    border-top: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+}
+.info p {
+    margin-top: 0.5rem;
+}
+.info a {
+    color: blue;
+    margin-top: 0.5rem;
+}
+@media only screen and (min-width: 650px) {
+    .information .mobile-image {
+        display: none;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .information .left {
+        display: none;
+    }
+    .information .desktop-image {
+        display: none;
+    }
+    .subsection {
+        flex-direction: column;
+        padding: 1rem 1rem 4rem 1rem;
+    }
+    .subsection img {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+    .information .first , .information .second, .information .third {
+        border: none;
+    }
+    .information .third {
+        background-color: white;
+        padding-bottom: 1rem;
+    }
+}
+/* Majors Section */
+.courses {
+    display: flex;
+    flex-direction: column;
+}
+.majors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 4.5rem;
+}
+.major {
+    width: 32%;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+.major img {
+    width: 100%;
+}
+.major-info {
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+.major-info h5{
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+@media only screen and (min-width: 650px) {
+    .courses {
+        background-color: #DCDCDC;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .courses {
+        border-top: 1px solid #DCDCDC;
+        border-bottom: 1px solid #DCDCDC;
+        background-color: white;
+    }
+    .majors {
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .major {
+        width: 100%;
+        background-color: #DCDCDC;
+        margin-bottom: 0.5rem;
+    }
+    .major img {
+        display: none;
+    }
+    .major-info {
+        padding: 1rem 1rem 1.5rem 1rem;
+    }
+    .major-info h5, .major-info p {
+        display: none;
+    }
+}
+/* Thesis Section */
+.thesis {
+    display: flex;
+    flex-direction: column;
+}
+.thesis .flex-container {
+    display: flex;
+}
+.thesis .left h4 {
+    padding-top: 1.5rem;
+}
+.thesis .left p {
+    padding-top: 0.5rem;
+}
+.thesis .right {
+    padding-top: 2rem;
+}
+.thesis .first {
+    background-color: #E5E5E5;
+}
+@media only screen and (max-width: 650px) {
+    .thesis .right , .video-info {
+        display: none;
+    }
+    .thesis video {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #E5E5E5;
+    padding: 1rem 1.5rem;
+}
+.links a{
+    color: #383838;
+}
+@media only screen and (max-width: 650px) {
+    .links {
+        display: none;
+    }
+    footer {
+        border: none;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}

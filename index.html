@@ -5,23 +5,44 @@
         <title>Colmar Academy</title>
         <link rel="stylesheet" href="resources/css/reset.css">
         <link rel="stylesheet" href="resources/css/style.css">
+
+        <link rel="icon" type="image/png" href="resources/images/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="resources/images/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="resources/images/favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="resources/images/favicon/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="resources/images/favicon/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="resources/images/favicon/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="resources/images/favicon/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="resources/images/favicon/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="resources/images/favicon/mstile-310x310.png" />
+
     </head>
     <body>
+        <!-- header including navigation -->
         <header>
             <div class="logo">
                 <img src="resources/images/ic-logo.svg" alt="Logo">
                 <span class="colmar">Colmar</span>
                 <span class="academy">Academy</span>
             </div>
-            <nav>
-                <a href="#" class="desktop">On campus</a>
-                <a href="#" class="desktop">Online</a>
-                <a href="#" class="desktop">For companies</a>
-                <a href="#" class="desktop">Sign in</a>
+            <nav class="desktop">
+                <a href="#">On campus</a>
+                <a href="#">Online</a>
+                <a href="#">For companies</a>
+                <a href="#">Sign in</a>
+            </nav>
+            <nav class="mobile">
+                <img class="mobile-icon" src="./resources/images/ic-logo.svg" alt="Colmar Academy"/>
+                <img class="mobile-icon" src="./resources/images/ic-on-campus.svg" alt="on campus"/>
+                <img class="mobile-icon" src="./resources/images/ic-online.svg" alt="online"/>
+                <img class="mobile-icon" src="./resources/images/ic-login.svg" alt="sign in"/>
             </nav>
         </header>
+        <!-- begining content -->
         <div class="content">
-            <div class="section banner">
+            <div class="section banner"> <!-- first section, image and some text -->
                 <div class="left">
                     <img src="resources/images/banner.jpg" alt="Students studying">
                 </div>
@@ -30,7 +51,7 @@
                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
                     <a href="#">Start here</a>
                 </div>
-            </div>
+            </div><!-- /.banner section -->
             <div class="section information">
                 <div class="left">
                     <img src="resources/images/information-main.jpg" alt="Student Reading">
@@ -42,126 +63,127 @@
                         dolor consequat, tristique ligula."
                     </p>
                     <p class="subtext">Emanuel, Sr Strategist at Hiring.com</p>
-                </div>
+                </div><!-- /.left -->
                 <div class="right">
-                    <div class="subsection">
-                        <img src="resources/images/information-orientation.jpg" alt="">
+                    <div class="first subsection">
+                        <img class="desktop-image" src="resources/images/information-orientation.jpg" alt="Students on a path to knowledge">
+                        <img class="mobile-image" src="resources/images/information-orientation-mobile.jpg" alt="Students on a path to knowledge">
                         <div class="info">
-                            <h3>Orientation date</h3>
+                            <h4>Orientation date</h4>
                             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                            <p><a href="#">Read more</a></p>
-                        </div>
-                    </div>
-                    <div class="subsection">
-                        <img src="resources/images/information-campus.jpg" alt="Lecture Hall">
+                            <a href="#">Read more</a>
+                        </div><!-- /.info -->
+                    </div><!-- /.first subsection -->
+                    <div class="second subsection">
+                        <img class="desktop-image" src="resources/images/information-campus.jpg" alt="Lecture Hall">
+                        <img class="mobile-image" src="resources/images/information-campus-mobile.jpg" alt="Lecture Hall">
                         <div class="info">
-                            <h3>Our Campus</h3>
+                            <h4>Our Campus</h4>
                             <p>Find which campus is close by you</p>
-                            <p><a href="#">Read more</a></p>
-                        </div>
-                    </div>
-                    <div class="subsection">
-                        <img src="resources/images/information-guest-lecture.jpg" alt="Guest Lecturer">
+                            <a href="#">Read more</a>
+                        </div><!-- /.info -->
+                    </div><!-- /.second subsection -->
+                    <div class="third subsection">
+                        <img class="desktop-image" src="resources/images/information-guest-lecture.jpg" alt="Guest Lecturer">
+                        <img class="mobile-image" src="resources/images/information-guest-lecture-mobile.jpg" alt="Guest Lecturer">
                         <div class="info">
-                            <h3>Our guest lecture</h3>
+                            <h4>Our guest lecturer</h4>
                             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                            <p><a href="#">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <a href="#">Read more</a>
+                        </div><!-- /.info -->
+                    </div><!-- /.third subsection -->
+                </div><!-- /.right -->
+            </div><!-- /.information section -->
             <div class="section courses">
                 <div class="headline">
                     <h2>Start learning</h2>
                 </div>
                 <div class="majors">
-                    <div class="major">
+                    <div class="first major">
                         <img src="resources/images/course-software.jpg" alt="Software Engineering">
                         <div class="major-info">
-                            <h3>Software engineering</h3>
-                            <h4>Courses</h4>
+                            <h4>Software engineering</h4>
+                            <h5>Courses</h5>
                             <p>Web Development, Mobile Development, iOT, APIs</p>
                         </div>
-                    </div>
-                    <div class="major">
+                    </div><!-- /.first major -->
+                    <div class="second major">
                         <img src="resources/images/course-computer-art.jpg" alt="Computer art">
                         <div class="major-info">
-                            <h3>Computer art</h3>
-                            <h4>Courses</h4>
+                            <h4>Computer art</h4>
+                            <h5>Courses</h5>
                             <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                         </div>
-                    </div>
-                    <div class="major">
+                    </div><!-- /.second major -->
+                    <div class="third major">
                         <img src="resources/images/course-design.jpg" alt="Design">
                         <div class="major-info">
-                            <h3>Design</h3>
-                            <h4>Courses</h4>
+                            <h4>Design</h4>
+                            <h5>Courses</h5>
                             <p>User Experience Design, User Research, Visual Design</p>
                         </div>
-                    </div>
-                    <div class="major">
+                    </div><!-- /.third major -->
+                    <div class="fourth major">
                         <img src="resources/images/course-data.jpg" alt="Data">
                         <div class="major-info">
-                            <h3>Data</h3>
-                            <h4>Courses</h4>
+                            <h4>Data</h4>
+                            <h5>Courses</h5>
                             <p>Data Science, Big Data, SQL, Data Visualization</p>
                         </div>
-                    </div>
-                    <div class="major">
+                    </div><!-- /.fourth major -->
+                    <div class="fifth major">
                         <img src="resources/images/course-business.jpg" alt="Business">
                         <div class="major-info">
-                            <h3>Business</h3>
-                            <h4>Courses</h4>
+                            <h4>Business</h4>
+                            <h5>Courses</h5>
                             <p>Product Development, Business Development, Startup</p>
                         </div>
-                    </div>
-                    <div class="major">
+                    </div><!-- /.fifth major -->
+                    <div class="sixth major">
                         <img src="resources/images/course-marketing.jpg" alt="Marketing">
                         <div class="major-info">
-                            <h3>Marketing</h3>
-                            <h4>Courses</h4>
+                            <h4>Marketing</h4>
+                            <h5>Courses</h5>
                             <p>Analytics, Content Marketing, Mobile Marketing</p>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div><!-- /.sixth major -->
+                </div><!-- /.major -->
+            </div><!-- /.section courses -->
             <div class="section thesis">
                 <div class="headline">
                     <h2>Thesis exhibit</h2>
                 </div>
-                <div class="container">
+                <div class="flex-container">
                     <div class="left">
-                        <div class="media">
-                            <video src="resources/videos/thesis.mp4" autoplay controls muted>
-                            </video>
-                        </div>
-                        <h3>Reimagine urban</h3>
-                        <p>
+                        <video src="resources/videos/thesis.mp4" autoplay controls muted>
+                        </video>
+                        <h4 class="video-info">Reimagine urban</h4>
+                        <p class="video-info">
                             "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
                             commodo lectus, nec consequate neque. Sed non accumsan urna.
                             Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
                             dolor consequat, tristique ligula."
                         </p>
-                    </div>
+                    </div><!-- /.left -->
                     <div class="right">
-                        <div class="subsection">
+                        <div class="first subsection">
                             <img src="resources/images/thesis-fisma.jpg" alt="Busy Desktop">
                             <div class="info">
                                 <h3>Fisma: Design and Prototype</h3>
                                 <p>Designer showcase of new prototype product</p>
                             </div>
                         </div>
-                        <div class="subsection">
+                        <div class="second subsection">
                             <img src="resources/images/thesis-now-and-then.jpg" alt="City Skyline">
                             <div class="info">
                                 <h3>Now and then</h3>
                                 <p>Research study about New York</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </div><!-- /.second subsection -->
+                    </div><!-- /.right -->
+                </div><!-- /.flex container -->
+            </div><!-- /.thesis section -->
+        </div><!-- /.content -->
         <footer>
             <p>© 2016 Colmar Academy. All rights reserved</p>
             <div class="links">
